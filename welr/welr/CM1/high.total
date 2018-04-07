@@ -1,0 +1,22 @@
+srs51221 dpu ccm implement mechanism whereby large memory loads dumps accomplished incrementally
+srs51222 dpu ccm process real time non deferred commands within ms receipt icu scu
+srs51231 dpu ccm record error last boot ivec location eeprom discontinue strobing watchdog timer unrecoverable software error occur unrecoverable software error defined error causes loss commandability ground communication
+srs51232 dpu ccm mechanism cscs report errors inclusion dpu hk
+srs51233 dpu ccm collect task hbeat dpu scui dpu ccm dpu dcx dpu tmali dpu dpa non responsive tasks reported dpu hk
+srs51234 dpu ccm count consecutively reported error count particular error id exceeds particular reporting period error code replaced error code sequence include original error code number times error reported
+srs51235 dpu ccm check length received dpu cmd expected value lookup table indexed function code received value match expected command discarded error enqueued
+srs51236 dpu ccm rejecting command report error dpu hk indicating byte code command rejected lsb errno described 03691 dpusdp 01
+srs51237 dpu ccm maintain counts number commands successfully received rejected report parameters dpu hk
+srs51241 dpu ccm use dpu eeprm access eeprom
+srs51242 dpu ccm use dpu icui communicate icu
+srs51311 dpu tmali install callbacks handling dpu dci interrupts including error interrupt ping pong timeout interrupt ping pong complete flag interrupt
+srs51312 dpu tmali capable making data available dci dpu dpa dpu tmali populate ring buffer frames data application task retrieval
+srs51313 dpu tmali function sets current event bit ordering mode dci driver
+srs51314 dpu tmali tmali hk dpu ccm request
+srs51321 dpu tmali allocate ring buffer size specified tmali buffer size provided initialization storing incoming frames data default buffer size mb
+srs51322 dpu tmali configure ping pong frame limit startup specified tmali pp limit provided initialization default value frames capable modified dynamically
+srs51323 dpu tmali configure dci interface data timeout startup specified tmali timeout provided initialization default value milliseconds capable modified dynamically
+srs51331 dpu tmali utilize scm dci sr along errno provided dpu dci decode errors place error queue dpu ccm
+srs51332 dpu tmali install callback routine respond dci error interrupt
+srs51333 dpu tmali place starting address event ring buffer tmali hk
+srs51341 dpu tmali use dpu dci communicate dci interface

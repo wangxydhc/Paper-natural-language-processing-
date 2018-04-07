@@ -1,0 +1,111 @@
+UC15S1 /auth/admin/editCPTProcedureCodes UpdateCPTCodeListAction UpdateCPTCodeListAction CPTCodesDAO CPTCodesDAO CPTCodesDAO
+UC27S2 /auth/hcp-uap/updateLabProc LabProcUAPAction EmailUtil
+UC15S3 /auth/admin/editNDCodes UpdateNDCodeListAction UpdateNDCodeListAction NDCodesDAO NDCodesDAO NDCodesDAO
+UC15S2 /auth/admin/editICDCodes UpdateICDCodeListAction UpdateICDCodeListAction ICDCodesDAO ICDCodesDAO ICDCodesDAO
+UC17S3 GetVisitRemindersAction GetVisitRemindersAction GetVisitRemindersAction VisitRemindersDAO
+UC15S4 /auth/admin/editLOINCCodes UpdateLOINCListAction UpdateLOINCListAction LOINCDAO LOINCDAO LOINCDAO
+UC17S1 /auth/hcp/visitReminders GetVisitRemindersAction VisitRemindersDAO /auth/hcp/visitReminders /auth/hcp/visitReminders
+UC27S1 /util/resetPassword ResetPasswordAction EmailUtil
+UC33S1 /auth/hcp/hcpConsultation PatientDAO PersonnelDAO PatientDAO ReferralManagementAction ReferralDAO
+UC33S2 /auth/hcp/hcpConsultation ReferralManagementAction ReferralManagementAction PatientDAO PersonnelDAO ReferralDAO ReferralDAO ReferralManagementAction ReferralDAO
+UC21S1 /auth/hcp-er/emergencyReport EmergencyReportAction EmergencyReportAction EmergencyReportAction EmergencyReportAction EmergencyReportAction EmergencyReportAction EmergencyReportAction EmergencyReportAction EmergencyReportAction PatientDAO AllergyDAO PatientDAO PatientDAO PatientDAO
+UC17S2 GetVisitRemindersAction VisitRemindersDAO
+UC23S4 /auth/hcp-uap/viewMyReportRequests ViewMyReportRequestsAction ReportRequestDAO
+UC19S1 /auth/patient/viewPrescriptionRecords ViewPrescriptionRecordsAction PatientDAO EmailUtil
+UC23S3 /auth/hcp-uap/viewReport ViewMyReportRequestsAction ViewMyRecordsAction ViewMyRecordsAction ViewMyRecordsAction ViewMyRecordsAction ViewMyRecordsAction ViewMyRecordsAction ViewMyRecordsAction ViewReportAction ViewReportAction ViewReportAction ViewReportAction ReportRequestDAO PatientDAO OfficeVisitDAO HealthRecordsDAO AllergyDAO PatientDAO PatientDAO FamilyDAO FamilyDAO FamilyDAO PatientDAO PatientDAO PatientDAO PatientDAO
+UC19S3 /auth/hcp-uap/getPrescriptionReport /auth/patient/viewPrescriptionRecords
+UC19S2 /auth/hcp-uap/getPrescriptionReport ViewPrescriptionRecordsAction PatientDAO
+UC31S2 /auth/patient/viewExpiredPrescriptionRecords /auth/patient/viewLHCP
+UC31S1 /auth/patient/viewExpiredPrescriptionRecords PatientDAO ViewExpiredPrescriptionsAction PatientDAO PersonnelDAO
+UC8S1 /auth/patient/viewAccessLog ViewMyAccessLogAction TransactionDAO
+UC8S2 /auth/patient/viewAccessLog ViewMyAccessLogAction TransactionDAO
+UC32E1 /auth/hcp/viewPrescriptionRenewalNeeds
+UC37S1 /auth/hcp-uap/editOfficeVisit EditOfficeVisitAction AllergyDAO
+UC37S3 EmailUtil EditOfficeVisitAction PatientDAO
+UC37S2 /auth/hcp-uap/editOfficeVisit EditOfficeVisitAction DrugInteractionDAO OfficeVisitDAO
+UC35S2 /auth/patient/viewMyRecords ViewMyRecordsAction OfficeVisitDAO /auth/patient/reportAdverseEvent ReportAdverseEventAction AdverseEventDAO ReportAdverseEventAction EmailUtil ReportAdverseEventAction
+UC35S1 /auth/patient/viewPrescriptionRecords ViewPrescriptionRecordsAction PatientDAO /auth/patient/reportAdverseEvent ReportAdverseEventAction AdverseEventDAO ReportAdverseEventAction EmailUtil ReportAdverseEventAction
+UC16 /auth/hcp-uap/chronicDiseaseRisks ChronicDiseaseRiskAction ChronicDiseaseRiskAction RiskChecker HeartDiseaseRisks Type1DiabetesRisks Type2DiabetesRisks HealthRecordsDAO
+UC4E1 SecurityQAValidator PatientValidator PersonnelValidator
+UC38S2 /auth/admin/editNDCodes DrugInteractionAction DrugInteractionDAO DrugInteractionDAO DrugInteractionDAO
+UC38S1 /auth/admin/editNDCInteractions DrugInteractionAction DrugInteractionDAO
+UC18S1 /auth/admin/hospitalListing UpdateHospitalListAction HospitalsDAO
+UC18S2 /auth/admin/hospitalListing UpdateHospitalListAction UpdateHospitalListAction HospitalsDAO
+UC13E1 /util/getUser GetUserNameAction AuthDAO
+UC25E1 /auth/surveyResults
+UC30S5 /auth/patient/viewMyMessages ViewMyMessagesAction MessageDAO /auth/patient/viewMyMessages ViewMyMessagesAction MessageDAO /auth/hcp/viewMyMessages
+UC21E2 /util/getUser GetUserNameAction AuthDAO
+UC4S4 TransactionDAO
+UC21E1 /util/getUser GetUserNameAction AuthDAO
+UC13 EditRepresentativesAction EditRepresentativesAction AuthDAO PatientDAO PatientDAO
+UC12 /auth/tester/home TransactionDAO
+UC10S1 EditPHRAction EditPHRAction EditPHRAction EditPHRAction PersonnelDAO HealthRecordsDAO OfficeVisitDAO FamilyDAO FamilyDAO FamilyDAO /auth/hcp-uap/editBasicHealth EditHealthHistoryAction EditHealthHistoryAction EditHealthHistoryAction AuthDAO HealthRecordsDAO
+UC10S2 /auth/patient/home TransactionDAO
+UC26E1 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO
+UC18E2 HospitalBeanValidator
+UC18E1 HospitalBeanValidator
+UC11S2 /auth/hcp-uap/editOfficeVisit EditOfficeVisitAction OfficeVisitDAO EditOfficeVisitAction OfficeVisitDAO EditOfficeVisitAction AllergyDAO EditOfficeVisitAction EditOfficeVisitAction EditOfficeVisitAction OfficeVisitDAO OfficeVisitDAO OfficeVisitDAO OfficeVisitDAO OfficeVisitDAO
+UC24 /auth/patient/survey SurveyAction SurveyDAO
+UC25 /auth/surveyResults ViewSurveyResultAction ViewSurveyResultAction HospitalsDAO SurveyResultDAO SurveyResultDAO
+UC1E1 AddPatientValidator
+UC23S1 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO
+UC28 /auth/hcp-uap/viewPatientOfficeVisitHistory ViewPatientOfficeVisitHistoryAction OfficeVisitDAO PatientDAO
+UC29 /auth/patient/myDiagnoses MyDiagnosisAction PatientDAO MyDiagnosisAction PatientDAO PersonnelDAO OfficeVisitDAO LabProcedureDAO PersonnelDAO
+UC34E4 RemoteMonitoringDAO RemoteMonitoringDAO
+UC34E1 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO
+UC34E2 RemoteMonitoringDataBeanValidator
+UC34E3 RemoteMonitoringDataBeanValidator
+UC30E1 /util/getUser GetUserNameAction AuthDAO
+UC30E2 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO
+UC10E2 /util/getUser GetUserNameAction AuthDAO
+UC10E1 /util/getUser GetUserNameAction AuthDAO
+UC26S2 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO /auth/hcp/LabProcHCP LabProcUAPAction EditPatientAction PatientDAO LabProcedureDAO
+UC26S1 /auth/patient/viewMyRecords ViewMyRecordsAction LabProcedureDAO
+UC19E2 /util/getUser GetUserNameAction AuthDAO
+UC19E1 /util/getUser GetUserNameAction AuthDAO
+UC5S1 TransactionDAO
+UC23E1 /util/getUser GetUserNameAction AuthDAO
+UC23E2 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO
+UC5S2 TransactionDAO
+UC3S5 LabProcedureDAO ViewMyReportRequestsAction ReportRequestDAO
+UC3S4 /auth/hcp/home LabProcHCPAction ReportRequestDAO OfficeVisitDAO LabProcedureDAO
+UC3S3 /auth/admin/sessionTimeout ChangeSessionTimeoutAction AccessDAO SessionTimeoutListener
+UC3S2 ResetPasswordAction AuthDAO AuthDAO EmailUtil
+UC3S1 /util/resetPassword ResetPasswordAction ResetPasswordAction ResetPasswordAction ResetPasswordAction
+UC26E2 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO
+UC32S2 /auth/hcp/viewPrescriptionRenewalNeeds ViewPrescriptionRenewalNeedsAction PersonnelDAO PatientDAO
+UC26S3 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO /auth/hcp-uap/updateLabProc LabProcUAPAction LabProcedureDAO
+UC11E2 /util/getUser GetUserNameAction AuthDAO
+UC11E1 /util/getUser GetUserNameAction AuthDAO
+UC26S4 /auth/patient/home LabProcedureDAO
+UC1S1 /auth/hcp-uap/addPatient AddPatientAction PatientDAO AuthDAO PatientDAO TransactionDAO
+UC2E2 AddPersonnelValidator
+UC15E1 LOINCBeanValidator MedicationBeanValidator DiagnosisBeanValidator ProcedureBeanValidator
+UC30S2 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO /auth/hcp/sendMessage SendMessageAction PatientDAO
+UC30S3 /auth/patient/viewMyMessages ViewMyMessagesAction MessageDAO SendMessageAction MessageDAO
+UC30S1 /auth/patient/sendMessage SendMessageAction MessageDAO EmailUtil
+UC3E1 ResetPasswordAction AuthDAO AuthDAO ResetPasswordAction
+UC30S4 /auth/hcp/viewMyMessages ViewMyMessagesAction MessageDAO /auth/hcp/reply SendMessageAction MessageDAO
+UC3E2 /util/resetPassword ResetPasswordAction
+UC6S2 /auth/patient/viewVisitedHCPs ViewVisitedHCPsAction ViewVisitedHCPsAction DeclareHCPAction PatientDAO DeclareHCPAction PatientDAO
+UC6S3 /auth/patient/viewVisitedHCPs ViewVisitedHCPsAction PersonnelDAO
+UC6S1 /auth/patient/viewVisitedHCPs ViewVisitedHCPsAction PatientDAO PersonnelDAO PatientDAO
+UC11S1 /auth/hcp-uap/editOfficeVisit EditOfficeVisitAction OfficeVisitDAO EditOfficeVisitAction OfficeVisitDAO EditOfficeVisitAction AllergyDAO EditOfficeVisitAction EditOfficeVisitAction OfficeVisitDAO OfficeVisitDAO OfficeVisitDAO EditOfficeVisitAction OfficeVisitDAO EditOfficeVisitAction OfficeVisitDAO
+UC4S1 /auth/patient/editMyDemographics EditPatientAction EditPatientAction EmailUtil PatientDAO SetSecurityQuestionAction AuthDAO
+UC4S2 /auth/getPatientID SearchUsersAction PatientDAO EditPatientAction PatientDAO EmailUtil
+UC4S3 EditPersonnelAction EditPersonnelAction SetSecurityQuestionAction PersonnelDAO AuthDAO
+UC33E2 /auth/hcp/hcpConsultation
+UC33E1 /auth/hcp/hcpConsultation
+UC36S1 /auth/pha/monitorAdverseEvents MonitorAdverseEventAction AdverseEventDAO /auth/pha/adverseEventDetails MonitorAdverseEventAction PatientDAO MonitorAdverseEventAction EmailUtil MonitorAdverseEventAction AdverseEventDAO
+UC36S2 /auth/pha/monitorAdverseEvents MonitorAdverseEventAction AdverseEventDAO /auth/pha/adverseEventDetails MonitorAdverseEventAction PatientDAO MonitorAdverseEventAction EmailUtil MonitorAdverseEventAction AdverseEventDAO
+UC36S3 /auth/pha/adverseEventDetails MonitorAdverseEventAction SendMessageAction MessageDAO PersonnelDAO EmailUtil AdverseEventDAO
+UC34S6 /auth/patient/addTelemedicineData AddRemoteMonitoringDataAction RemoteMonitoringDAO EditRepresentativesAction PatientDAO
+UC34S4 /auth/hcp/viewAdditionalInfo ViewMyRemoteMonitoringListAction PatientDAO PatientDAO RemoteMonitoringDAO
+UC34S5 /auth/uap/getPatientMonitorList ViewMyRemoteMonitoringListAction RemoteMonitoringDAO ViewMyRemoteMonitoringListAction AuthDAO /auth/uap/addTelemedicineData AddRemoteMonitoringDataAction RemoteMonitoringDAO
+UC34S2 /auth/patient/addTelemedicineData AddRemoteMonitoringDataAction RemoteMonitoringDAO
+UC34S3 /auth/hcp/monitorPatients ViewMyRemoteMonitoringListAction AuthDAO RemoteMonitoringDAO
+UC34S1 /auth/getPatientID /util/getUser GetUserNameAction AuthDAO /auth/hcp/editPatientList EditMonitoringListAction EditMonitoringListAction AuthDAO RemoteMonitoringDAO
+UC9S1 /auth/patient/viewMyRecords ViewMyRecordsAction AllergyDAO ViewMyRecordsAction OfficeVisitDAO ViewMyRecordsAction HealthRecordsDAO ViewMyRecordsAction LabProcedureDAO
+UC9S2 ViewMyRecordsAction FamilyDAO FamilyDAO
+UC2S2 /auth/hcp/addUAP AddUAPAction PersonnelDAO PersonnelDAO AuthDAO
+UC2S1 /auth/admin/addHCP AddHCPAction PersonnelDAO AuthDAO PersonnelDAO

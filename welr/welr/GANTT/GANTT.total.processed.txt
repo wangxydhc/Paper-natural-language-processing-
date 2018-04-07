@@ -1,0 +1,86 @@
+create new task typically start date end date tasks activities one persons resources expected complete specified time frame
+add remove resources tasks dependencies dependencies tasks resources indicate resources supposed complete task task could worked multiple persons person could work multiple tasks dependencies may also annotated capture many hours person supposed work task daily basis
+change task begin end times manually user changes change start end date either editing properties dragging and dropping bar gui
+change task begin end times automatically dependency changes start end date changed automatically links among tasks changed
+change task begin end times automatically dependency changes start end date changed automatically one subtasks changes
+prevent circular dependencies links among tasks may circular task cannot depend task task already depends task
+show critical path critical path indicates tasks cause project delays delayed
+add remove holidays vacation days holidays vacation days properties persons resources changing information also changes availability person certain days
+show resource utilization underused overused person tasks may assigned persons indicated person receives tasks handle e person hours per task tasks exceeds allowed hours day person available due holidays vacation days also indicated person under utilized working less hours day
+delete tasks delete existing task associated information links tasks knowledge resources supposed work
+maintain task properties edit update task properties including start end date name progress complete
+add remove tasks subtasks task made subtask another example task subtask task
+handle milestones milestone special task whereas task typically timeframe specified the time needed complete task milestone typically event example release date software event rather timeframe
+create resources person ganttproject supports persons resources persons names holidays vacation days persons assigned work tasks
+delete resources person delete person associated information dependencies tasks person supposed work
+maintain resource properties resource range properties including name holidays
+add remove task links tasks linked one another indicate sequence performed example link task task task started task completed start date task must thus end date task
+class used represent dependency one task one human resource dependency class provides functions get task human resource
+collection resource assignments used manage relationships multiple human resources task contains multiple objects human resource assignment class collection provides functions add remove human resource assignments
+class task uses object assignments collection class manage assignments
+human resource class multiple objects resource assignments assigns resource tasks class provides function get list objects
+gui class task property provides interface functions add remove human resource assignments
+gui class uses object resource tree table model class display resource tree resource tree table model provides functions build subtrees based dependencies
+gui class human resource load distribution uses objects load distribution class capture hours person supposed work
+load distribution class provides functions calculate distribution based tasks human resources functions uses task manager
+gui needs change length task
+using gui user change length task dragging and dropping bar gui
+using gui user change length task via date picker control
+dependency class contains dependant task dependee task provides functions get dependant task dependee task dependency class also contains constraint show constraint dependency
+class used represent constraint start date dependee task earlier end date dependent task
+collection dependency class used manage dependencies contains objects dependency classes provides functions create delete get dependencies
+gui class task property provides interface functions add remove dependencies using object dependency collection
+gui class graphic area provides function draw dependency function uses object task manager add dependencies
+ask manager class uses object dependency collection class manage dependencies
+object recalculating task schedule algorithm class used change start end date based dependency changes algorithm class provides functions fulfill constraints modify start end date tasks
+application needs keep track task begin end times
+application needs keep track subtasks task
+every time start end time subtask changes start end time parent task need change accordingly
+every time start end time task changes start end time one subtasks need change well
+gui class graphic area provides function draw dependency function uses object task manager add dependencies
+ask manager class uses object dependency collection class manage dependencies
+class dependency collection provides function check new dependency cause loop time object dependency class created function returns exception loop
+gui needs display critical path make changes affecting critical path updated
+evaluate critical path project
+human resource class contains variable holidays class provides functions change get holidays multiple holidays
+class represent holiday holiday class provides functions set begin date end date holiday check date holiday get duration holiday
+human resource class provides function change availability person based holidays
+gui needs assign task persons
+gui needs assign persons tasks
+gui needs show utilization person
+gui needs show person underutilized overbooked
+create new task object taskmanager class passed class constructor taskmanager turn takes care resource allocation using resourceassignmentcollection class
+ask class provides public method setstart allows specify starting date task input argument method takes object ganttcalendar class
+ask class provides public method setend allows specify starting date task input argument method takes object ganttcalendar class
+ask class provides public method setduration allows specify duration task input argument method takes object tasklength class
+delete task calendar ganttproject class call delete method supplied taskid paramenter adjustment allocated resources links tasks takes place interfacing following classes defaultmutabletreenode gantttreetablenode tasknode adjusttaskboundsalgorithm
+deleting task ganttproject class calls gantttreetablenode defaultmutabletreenode classes identify parent task deleted
+deleting task ganttproject class calls adjusttaskboundsalgorithm passes parent deleted task parameter adjusttaskboundsalgorithm takes care handling releasing resources associated deleted task
+gui change task name
+gui change start end date task
+gui set progress task
+start end date task changed start end dates subtasks need change accordingly
+add tasks subtasks method indent selected task nodes gui change subtasks used manager task hierarchy provides functions update relationship tasks
+manager task hierarchy provides method move task node specific position
+remove tasks subtasks gantttree2 class calls method dedent selected task nodes gui subtasks original parents tasks object class used remove relationship selected tasks original parents add relationship selected tasks new parents
+remove tasks subtasks method dedent selected task nodes gui subtasks original parents tasks used task tree model provides methods remove relationship selected tasks original parents add relationship selected tasks new parents
+milestone task duration time point occurrence
+user create milestones
+user interface specify whether specific task milestone
+milestone displayed visually differently regular tasks
+gui task property provides interface functions add remove human resource assignments using object resource assignments collection class
+human resource class contains name phone email holidays class provides functions set get properties class used represent holidays multiple holidays
+class holidays provides functions get start date finish date class also provides function check special date holiday
+human resource assignment class used represent relationship one task one human resource class provides functions get task human resource
+collection resource assignments used manage relationships multiple human resources single task contains multiple objects human resource assignment class collection provides functions add remove human resource assignments
+class task uses object assignments collection class manage assignments
+gui needs delete resources project
+assignment resource task captured relationship
+resource removed tasks resource assigned need updated
+human resource class contains name phone email holidays class provides functions set get properties class used represent holidays multiple holidays
+gui provides interface functions edit properties objects human resource class
+class holidays provides functions get start date finish date class also provides function check special date holiday
+gui needs link tasks project
+fact linking one task another captured dependency two tasks
+wo tasks link check conducted potential collisions chart
+start end dates graph either flexible rigid purpose adjusting fixing potential collisions

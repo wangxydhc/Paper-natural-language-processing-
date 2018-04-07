@@ -1,0 +1,17 @@
+r1 create new task typically start date end date tasks activities one persons resources expected complete specified time frame
+r10 add remove resources tasks dependencies dependencies tasks resources indicate resources supposed complete task task could worked multiple persons person could work multiple tasks dependencies may also annotated capture many hours person supposed work task daily basis
+r11 change task begin end times manually user changes change start end date either editing properties dragging and dropping bar gui
+r12 change task begin end times automatically dependency changes start end date changed automatically links among tasks changed
+r13 change task begin end times automatically dependency changes start end date changed automatically one subtasks changes
+r14 prevent circular dependencies links among tasks may circular task cannot depend task task already depends task
+r15 show critical path critical path indicates tasks cause project delays delayed
+r16 add remove holidays vacation days holidays vacation days properties persons  resources  changing information also changes availability person certain days
+r17 show resource utilization  underused overused person  tasks may assigned persons indicated person receives tasks handle  e person hours per task tasks exceeds allowed hours day  person available due holidays vacation days also indicated person under utilized working less hours day
+r2 delete tasks delete existing task associated information links tasks knowledge resources supposed work
+r3 maintain task properties edit update task properties including start end date name progress  complete 
+r4 add remove tasks subtasks task made subtask another example task subtask task
+r5 handle milestones milestone special task whereas task typically timeframe specified  the time needed complete task  milestone typically event example release date software event rather timeframe
+r6 create resources  person  ganttproject supports persons resources persons names holidays vacation days persons assigned work tasks
+r7 delete resources  person  delete person associated information dependencies tasks person supposed work
+r8 maintain resource properties resource range properties including name holidays
+r9 add remove task links tasks linked one another indicate sequence performed example link task task task started task completed start date task must thus end date task

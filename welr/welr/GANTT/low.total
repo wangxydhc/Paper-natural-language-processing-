@@ -1,0 +1,69 @@
+d10_1 class used represent dependency one task one human resource dependency class provides functions get task human resource
+d10_2 collection resource assignments used manage relationships multiple human resources task contains multiple objects human resource assignment class collection provides functions add remove human resource assignments
+d10_3 class task uses object assignments collection class manage assignments
+d10_4 human resource class multiple objects resource assignments assigns resource tasks class provides function get list objects
+d10_5 gui class task property provides interface functions add remove human resource assignments
+d10_6 gui class uses object resource tree table model class display resource tree resource tree table model provides functions build subtrees based dependencies
+d10_7 gui class human resource load distribution uses objects load distribution class capture hours person supposed work
+d10_8 load distribution class provides functions calculate distribution based tasks human resources functions uses task manager
+d11_1 gui needs change length task
+d11_2 using gui user change length task dragging and dropping bar gui
+d11_3 using gui user change length task via date picker control
+d12_1 dependency class contains dependant task dependee task provides functions get dependant task dependee task dependency class also contains constraint show constraint dependency
+d12_2 class used represent constraint start date dependee task earlier end date dependent task
+d12_3 collection dependency class used manage dependencies contains objects dependency classes provides functions create delete get dependencies
+d12_4 gui class task property provides interface functions add remove dependencies using object dependency collection
+d12_5 gui class graphic area provides function draw dependency function uses object task manager add dependencies
+d12_6 task manager class uses object dependency collection class manage dependencies
+d12_7 object recalculating task schedule algorithm class used change start end date based dependency changes algorithm class provides functions fulfill constraints modify start end date tasks
+d13_1 application needs keep track task begin end times
+d13_2 application needs keep track subtasks task
+d13_3 every time start end time subtask changes start end time parent task need change accordingly
+d13_4 every time start end time task changes start end time one subtasks need change well
+d14_1 gui class graphic area provides function draw dependency function uses object task manager add dependencies
+d14_2 task manager class uses object dependency collection class manage dependencies
+d14_3 class dependency collection provides function check new dependency cause loop time object dependency class created function returns exception loop
+d15_1 gui needs display critical path make changes affecting critical path updated
+d15_2 evaluate critical path project
+d16_1 human resource class contains variable holidays class provides functions change get holidays multiple holidays
+d16_2 class represent holiday holiday class provides functions set begin date end date holiday check date holiday get duration holiday
+d16_3 human resource class provides function change availability person based holidays
+d17_1 gui needs assign task persons
+d17_2 gui needs assign persons tasks
+d17_3 gui needs show utilization person
+d17_4 gui needs show person underutilized overbooked
+d1_1 create new task object taskmanager class passed class constructor taskmanager turn takes care resource allocation using resourceassignmentcollection class
+d1_2 task class provides public method setstart  allows specify starting date task input argument method takes object ganttcalendar class
+d1_3 task class provides public method setend  allows specify starting date task input argument method takes object ganttcalendar class
+d1_4 task class provides public method setduration  allows specify duration task input argument method takes object tasklength class
+d2_1 delete task calendar ganttproject class call delete method supplied taskid paramenter adjustment allocated resources links tasks takes place interfacing following classes defaultmutabletreenode gantttreetablenode tasknode adjusttaskboundsalgorithm
+d2_2 deleting task ganttproject class calls gantttreetablenode defaultmutabletreenode classes identify parent task deleted
+d2_3 deleting task ganttproject class calls adjusttaskboundsalgorithm passes parent deleted task parameter adjusttaskboundsalgorithm takes care handling releasing resources associated deleted task
+d3_1 gui change task name
+d3_2 gui change start end date task
+d3_3 gui set progress task
+d3_4 start end date task changed start end dates subtasks need change accordingly
+d4_1 add tasks subtasks method indent selected task nodes gui change subtasks used manager task hierarchy provides functions update relationship tasks
+d4_2 manager task hierarchy provides method move task node specific position
+d4_3 remove tasks subtasks gantttree2 class calls method dedent selected task nodes gui subtasks original parents tasks object class used remove relationship selected tasks original parents add relationship selected tasks new parents
+d4_4 remove tasks subtasks method dedent selected task nodes gui subtasks original parents tasks used task tree model provides methods remove relationship selected tasks original parents add relationship selected tasks new parents
+d5_1 milestone task duration time point occurrence
+d5_2 user create milestones
+d5_3 user interface specify whether specific task milestone
+d5_4 milestone displayed visually differently regular tasks
+d6_1 gui task property provides interface functions add remove human resource assignments using object resource assignments collection class
+d6_2 human resource class contains name phone email holidays class provides functions set get properties class used represent holidays multiple holidays
+d6_3 class holidays provides functions get start date finish date class also provides function check special date holiday
+d6_4 human resource assignment class used represent relationship one task one human resource class provides functions get task human resource
+d6_5 collection resource assignments used manage relationships multiple human resources single task contains multiple objects human resource assignment class collection provides functions add remove human resource assignments
+d6_6 class task uses object assignments collection class manage assignments
+d7_1 gui needs delete resources project
+d7_2 assignment resource task captured relationship
+d7_3 resource removed tasks resource assigned need updated
+d8_1 human resource class contains name phone email holidays class provides functions set get properties class used represent holidays multiple holidays
+d8_2 gui provides interface functions edit properties objects human resource class
+d8_3 class holidays provides functions get start date finish date class also provides function check special date holiday
+d9_1 gui needs link tasks project
+d9_2 fact linking one task another captured dependency two tasks
+d9_3 two tasks link check conducted potential collisions chart
+d9_4 start end dates graph either flexible rigid purpose adjusting fixing potential collisions

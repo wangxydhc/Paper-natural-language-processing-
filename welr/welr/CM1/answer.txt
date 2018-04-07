@@ -1,0 +1,22 @@
+srs51221  dpusds512124  dpusds512141  dpusds512142  dpusds512143  dpusds512144  dpusds512145
+srs51222  dpusds51201  dpusds512131
+srs51231  dpusds512111  dpusds512121  dpusds512123  dpusds512151
+srs51232  dpusds512121  dpusds512122  dpusds512151  dpusds51222
+srs51233  dpusds512121  dpusds512123
+srs51234  dpusds512152  dpusds512153  dpusds512154  dpusds51222
+srs51235  dpusds512111
+srs51236  dpusds512133
+srs51237  dpusds512133
+srs51241
+srs51242
+srs51311  dpusds51302
+srs51312  dpusds51329  dpusds51302  dpusds513151
+srs51313  dpusds51302  dpusds513161  dpusds51321
+srs51314  dpusds51302  dpusds513171  dpusds51327
+srs51321  dpusds51329
+srs51322  dpusds51323
+srs51323  dpusds513164  dpusds51325
+srs51331  dpusds512121  dpusds512151
+srs51332  dpusds51302  dpusds513131  dpusds513133
+srs51333
+srs51341  dpusds513131
